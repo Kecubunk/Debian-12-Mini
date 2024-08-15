@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+
+    <menu id="root-menu" label="Openbox 3">
+		<item label="Run Program" icon="/usr/share/icons/openbox-menu/search.png">
+			<action name="Execute">
+				<command>rofi -show drun</command>
+			</action>
+		</item> 
+
+		<separator/> <item label="VirtualBox" icon="/usr/share/icons/openbox-menu/virtualbox.png"><action name="Execute"><command>virtualbox</command></action></item> 
+		
+		<item label="Terminal" icon="/usr/share/icons/openbox-menu/terminal.png">
+            <action name="Execute">
+                <command>
+                    x-terminal-emulator
+                </command>
+            </action>
+        </item>
+        <item label="Web Browser" icon="/usr/share/icons/openbox-menu/web-browser.png">
+            <action name="Execute">
+                <command>
+                    x-www-browser
+                </command>
+            </action>
+        </item>
+        <item label="File Manager" icon="/usr/share/icons/openbox-menu/file-manager.png">
+            <action name="Execute">
+                <command>
+                    x-file-manager
+                </command>
+            </action>
+        </item>
+        <item label="Text Editor" icon="/usr/share/icons/openbox-menu/text-editor.png">
+            <action name="Execute">
+                <command>
+                    x-text-editor
+                </command>
+            </action>
+        </item>
+
+        <menu id="desktop-app-menu" label="Applications" icon="/usr/share/icons/openbox-menu/applications.png" execute="obamenu" />
+		
+        <separator/>
+</openbox_menu>
